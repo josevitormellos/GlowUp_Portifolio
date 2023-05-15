@@ -1,8 +1,8 @@
 function CriarFormulario() {
     const form = document.getElementById("root");
-    const status = document.getElementById("statusroot");
+   /*const status = document.getElementById("statusroot");*/
     if (form.innerHTML == ``) {
-        status.innerHTML = 
+        /*status.innerHTML = 
         `<div>   
         <h1>Contato</h1>
         </div>
@@ -14,25 +14,18 @@ function CriarFormulario() {
         <div>
         <p><b>Telefone:</b> (21) 99894-3822</p>
         <p><b>Email:</b> nataliamello@hotmail.com</p>
-        </div>`;
+        </div>`;*/
     form.innerHTML =
-        `<div>   
+        `  
             <input type="text" id="nome" name="nome" required placeholder="Nome">
-            <input type="text" id="sobrenome" name="sobrenome" required placeholder="Sobrenome">
-            </div>
-            <div>
             <input type="text" id="email" name="email" required placeholder="Email">
-            <input type="text" id="assunto" name="assunto" required placeholder="Assunto">
-            </div>
-            <div>
             <input type="text" id="empresa" name="empresa" required placeholder="Empresa">
             <input type="text" id="cell" name="cell" required placeholder="Telefone com DDD">
-            </div>
             <textarea cols="30" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
             <button type="submit">Enviar</button>`;
     }
     else {
-        status.innerHTML = ``;
+        /*status.innerHTML = ``;*/
         form.innerHTML = ``;
     }
     
@@ -49,7 +42,7 @@ function EnviarEmail() {
     corpoEmail += 'E-mail: ' + email + '%0D%0A';
     corpoEmail += 'Desejo entrar em contato com você para mais informações dos serviços';
 
-	var linkEmail = 'mailto:nataliamello@hotmail.com';
+	var linkEmail = 'mailto:contato.glowupfinanceiro@gmail.com';
 	linkEmail += '?subject=Contato pelo Formulário do GlowUP';
 	linkEmail += '&body=' + corpoEmail;
 
