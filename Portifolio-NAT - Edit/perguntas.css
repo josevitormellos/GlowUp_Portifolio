@@ -44,7 +44,7 @@
 
 /*=======> LAYOUT <=======*/
 .accordion {
-    min-height: 50vh;
+    min-height: 100svh;
     padding: 2rem 0;
     display: grid;
     place-items: center;
@@ -130,7 +130,6 @@ p~p {
     margin-bottom: 1.25rem;
 }
 
-/*=======> MEDIAS QUERIES <=======*/
 @media screen and (min-width:992px) {
     .container {
         margin: 0 auto;
@@ -153,3 +152,5 @@ p~p {
     }
 
 }
+
+

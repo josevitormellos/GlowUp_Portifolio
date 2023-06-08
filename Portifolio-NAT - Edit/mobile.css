@@ -1,0 +1,160 @@
+/*Celular*/
+
+@media screen and (max-width: 414px) {
+    
+  #menu{
+    display: none;
+  }
+
+    #destaque{
+        width: 100%;
+        margin-top:-150px;
+        
+    }
+    #destaque h1{
+      text-align: center;
+      font-size: 60px;
+    }
+    #destaque h2{
+      text-align: center;
+    }
+    #destaque a{
+       text-align: center;
+       margin-bottom: -160px;
+       
+    }
+
+    #servicos .titleS{
+        text-align: center;
+        width: 90%;
+        
+    }
+    #servicos .titleS h1{
+        font-size: 30px;
+        
+    }
+    #servicos .conteiner-service {
+        
+        width: 100%;
+    }
+    #servicos .conteiner-service .serv{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #servicos .conteiner-service .serv .boxservice{
+        margin: 20px 0;
+    }
+    .onda{
+        filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.007))
+                drop-shadow(-4px 0px 0px rgba(0, 0, 0, 0))
+                drop-shadow(-4px -4px -4px rgba(0, 0, 0, 0));
+    }
+    #sobremin .division{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #sobremin .division img{
+        width: 300px;
+        
+    }
+    #sobremin .column-Inv{
+        flex-direction: column-reverse;
+    }
+    #sobremin .division .status{
+        width: 80%;
+        margin-top: 20px;
+        
+    }
+    #sobremin .division .status .listdescript{
+
+        font-size: 14px;
+
+    }
+    
+    #fale-conosco .conteinerF .info-conosco{
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 250px;
+        color: whitesmoke;
+        flex-direction: column;
+     }
+     #fale-conosco .conteinerF .subtitle h2{
+        text-align: center;
+        font-size: 15px;
+       
+        
+     }
+     #fale-conosco .conteinerF .info-conosco button{
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 100px;
+        border: 0;
+        padding: 15px 70px;
+        color:whitesmoke;
+        background-color: #1ea59a;
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        cursor: pointer;
+     }
+     .accordion__content {
+        width: 100%;
+        
+    }
+
+    #rodape .conteinerR .info-rodape{
+        display: flex;
+        width: 100%;
+        height: 800px;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+       
+    
+    
+     }
+     .copy{
+        margin-top: 60px;
+     }
+     .copyright{
+        margin-bottom: 20px;
+     }
+     #formMensagem{
+        z-index: 5;
+        position:fixed;
+        width: 90%;
+        height: 100%;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0000006b;
+        visibility: hidden;
+        
+       }
+
+       .boxForm{
+        width: 95%;
+       }
+
+       .formMensagem .descript{
+        margin: 0px 0 20px 0;
+        font-size: 18px;
+        font-family: 'Arimo', sans-serif;
+        text-align: center;
+        
+       }
+       .boxForm img{
+        position: fixed;
+        top: 19%;
+        right: 16%;
+     
+        
+       }
+
+  }

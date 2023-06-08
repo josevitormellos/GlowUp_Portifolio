@@ -223,13 +223,6 @@ body{
 
 
 }
-.title{
-   font-size: 60px;
-   font-family: 'Bebas Neue', sans-serif;
-   border: 4px solid #000000;
-   padding: 20px 300px;
-   margin-bottom: 110px;
-}
 
 #sobremin .division{
     width: 1200px;
@@ -297,6 +290,12 @@ body{
     font-family: 'Arimo', sans-serif;
 }
 
+.onda{
+   filter: drop-shadow(2px 0px 0px rgba(0, 0, 0, 0.3))
+   drop-shadow(2px 0px 0px rgba(0,0,0,0.2))
+   drop-shadow(0px -1px 0px rgba(0,0,0,0.2));
+}
+
 
 
  /*Fale Conosco*/
@@ -336,7 +335,7 @@ body{
     color:whitesmoke;
     background-color: #037B70;
     font-family: 'Bebas Neue', sans-serif;
-    font-weight: 600;
+    font-weight: 200;
     font-size: 30px;
     cursor: pointer;
  }
@@ -369,35 +368,37 @@ body{
     justify-content: center;
     align-items: center;
     border-top: 1px solid rgba(180, 180, 180, 0.61);
-    padding-top: 70px;
+    
+    background-color: whitesmoke;
  }
 
  #rodape .conteinerR{
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
  }
  #rodape .conteinerR .info-rodape{
     display: flex;
-    width: 100%;
+    width: 900px;
     height: 200px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
    
 
 
  }
  #rodape .conteinerR .info-rodape h1{
-    
+   font-size: 25px;
     font-family: 'Bebas Neue', sans-serif;
-    font-weight: 600;
+    font-weight: 100;
+
 
  }
  #rodape .conteinerR .info-rodape .info-f{
     display: flex;
-    width: 400px;
+  
     height: 120px;
     flex-direction: column;
     justify-content: space-around;
@@ -407,21 +408,29 @@ body{
 
  }
  #rodape .conteinerR .info-rodape .info-f h1{
-   font-size: 30px;
+   font-size: 25px;
    color: #037B70;
    border-bottom: 2px solid black;
    width: 100%;
    margin-bottom: 20px;
+   font-weight: 100;
    
    
 
 }
  #rodape .conteinerR .info-rodape .info-f p{
-   font-size: 20px; 
+   font-size: 15px; 
    color: rgb(39, 39, 39);
    font-family: 'Arimo', sans-serif;
- }
+   display: flex;
+   align-items: center;
 
+ }
+#rodape .conteinerR .info-rodape .info-f p img{
+   margin-top: 12px;
+   margin-right: 10px;
+   
+ }
 
  #rodape .conteinerR .info-rodape .info-g{
     display: flex;
@@ -472,7 +481,7 @@ body{
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-   width: 240px;
+    width: 200px;
     font-family: 'Bebas Neue', sans-serif;
     color: #037B70;
  }
@@ -496,100 +505,19 @@ body{
      
  
   }
+  .copyright{
+   border-top: 2px solid #1b1b1bbd;
+   width: 500px;
+   text-align: center;
+   margin: 20px;
+   padding: 10px 0;
+      font-family: 'Arimo', sans-serif;
+      font-size: 15px;
+  }
+  .copyright .top{
+   font-weight: 600;
+  }
   
-
-
-
-  /*Formulario*/
-
-  .conteinerRoot{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80%;
-  }
-
-
-  #statusroot{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 50%;
-    color: whitesmoke;
-
-  }
-
-  #root{
-    display: flex ;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 50%;
-    
-  }
-
-
-  #root input{
-    border: 0px;
-    padding: 5px 10px;
-    width: 100%;
-    height: 50px;
-    text-align: left;
-    background-color: transparent;
-    border-bottom: 3px solid rgb(33, 33, 33);
-    color: white;
-    font-size: 15px;
-    font-family: 'Playfair Display', serif;
-    
-  }
-
-  #root input:hover{
-    border-bottom: 3px solid #00985d;
-   
-    
-  }
-
-
-  #root textarea{
-    border: 0px;
-    padding: 10px;
-    margin-bottom: 30px;
-    width: 100%;
-    height: 80px;
-    text-align: left;
-    background-color: transparent;
-    border-bottom: 3px solid rgb(33, 33, 33);
-    color: white;
-    font-size: 15px;
-    resize: none;
-    font-family: 'Playfair Display', serif;
-    
-  }
-
-  #root textarea:hover{
-    border-bottom: 3px solid #00985d;
-    
-  }
-
-  #root ::-webkit-input-placeholder{
-    color: white;
-    font-size: 15px;
-  }
-  #root textarea::placeholder{
-    color: white;
-    font-size: 15px;
-  }
-
-  #root label{
-    
-    font-size: 22px;
-    font-weight: 500;
-    color: whitesmoke;
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
  
  
 
@@ -600,253 +528,120 @@ body{
 }
 
  
-/*Celular*/
 
-@media screen and (max-width: 414px) {
-    .listMenu{
-        display: none;
-    }
 
-    #destaque{
-        width: 100%;
-        min-width: 412px;
-    }
 
-    .conteiner-service{
-        flex-direction: column;
-        align-items: center;
-    }
+  #formMensagem{
+   z-index: 5;
+   position:fixed;
+   width: 100%;
+   height: 100%;
+   top: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #0000006b;
+   visibility: hidden;
+  }
+  .boxForm img{
+   margin-left: 87%;
 
-    #rodape .conteinerR .info-rodape{
-        flex-direction: column;
-    }
-    .info-f{
-        flex-direction: column;
-    }
-    .image{
-        display: none;
-    }
-    #destaque .conteiner .title{
-        width: 100%;
-    }
-    #destaque .conteiner .title .space{
-        margin-left:20px;
-        width: 100%;
-        margin-top: 3px;
-        margin-bottom: 3px;
-    }
-    #destaque .conteiner .title .space h1{
-        font-size: 50px;
-    }
-    #destaque .conteiner .title .space p{
-       text-align: justify;
-       width: 80%;
-    }
-    #destaque .conteiner .title .space button{
-       margin-left: 20px;
-        width: 60%;
-     }
+   
+  }
+  .boxForm{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 600px;
+   height: 600px;
+   background: linear-gradient(15deg, #037B70 50%, #1ea59a 50.1%);
+   box-shadow: 0 0 2px #000000be,
+   0 0 5px #0000008f,
+   0 0 10px #0000007c,
+   0 0 20px #00000073;
+   margin-bottom: 50px;
+   border-radius: 5px;
+   
+  }
+  .formMensagem{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   height: 90%;
+  }
+  .formMensagem label{
+   margin: 20px 0;
+   font-family: 'Bebas Neue', sans-serif;
+   font-size: 30px;
+   color: whitesmoke;
 
-     #servicos{
-        width: 100%;
-     }
-     #servicos .titleS{
-        width: 80%;
-        align-items: center;
-        min-height: 400px;
-       
-     
-     }
-     .titleS h1{
-        width: 100%;
-        font-size: 25px;
-        
-     }
+  }
+  .formMensagem input{
+   padding: 15px 15px;
+   border-radius: 4px;
+   width: 350px;
+   background-color: #1e635d;
+   font-family: 'Arimo', sans-serif;
+   border: 2px solid #0e1414b0;
+   color: white;
+   font-size: 18px;
 
-     #servicos .conteiner-service .boxservice{
-        width: 100%;
-        min-height: 400px;
-        margin: 30px 0;
-       
-     }
-     #servicos .conteiner-service .boxservice .cont{
-        min-height: 200px;
-     }
-     #servicos .conteiner-service .boxservice .imgS{
-        min-height: 200px;
-     }
+  }
+  .formMensagem input::placeholder{
+   color: rgb(197, 197, 197);
+  }
+  .formMensagem button{
+   font-family: 'Bebas Neue', sans-serif;
+   background-color: #1e635d;
+   border: none;
+   border-radius: 5px;
+   width: 200px;
+   font-size: 26px;
+   color: white;
+   padding: 10px 20px;
+  }
+  .formMensagem .descript{
+   margin: 0px 0 20px 0;
+   font-size: 18px;
+   font-family: 'Arimo', sans-serif;
+   
+  }
+  #posFeito{
+   display: none;
+   flex-direction: column;
+   
+   align-items: center;
+   color: white;
+   justify-content: space-around;
+   height: 90%;
+   width: 80%;
+  }
+  #posFeito h2{
+   font-size: 35px;
+   text-align: center;
+   font-family: 'Bebas Neue', sans-serif;
+   font-weight: 200;
+  }
+  #posFeito a{
+   text-align: center;
+   font-family: 'Arimo', sans-serif;
+   width: 300px;
+   text-decoration: none;
+   
+   font-size: 30px;
 
-     #info .conteinerI {
-        min-height: 250px;
-     }
-
-     #info .conteinerI h1{
-        font-size: 13px;
-        font-weight: 100;
-        text-align: center;
-        font-style: italic;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-     }
-     #info .conteinerI .autor img{
-        width: 70px;
-     }
-
-     #info .conteinerI .autor .subtitle h2{
-        font-size: 20px;
-     }
-     #info .conteinerI .autor .subtitle p{
-        font-size: 12px;
-     }
-
-     #sobremin{
-        height: 700px;
-     }
-     #sobremin .division{
-        width: 100%;
-     }
-
-     #sobremin .division .status{
-        width: 80%;
-        
-     }
-     #sobremin .division .status h1{
-       font-size: 30px;
-       text-align: start;
-     }
-
-     #sobremin .division .status .listdescript p{
-        font-size: 15px;
-      }
-
-    #sobremin .division .status div p{
-        font-size: 12px;
-      }
-
-    #sobremin .division .status div{
-        height: 50px;
-      }
-
-    #sobremin .division .status .listdescript p {
-        min-height: 60px;
-    }
-
-     #sobremin #cliente{
-        display: none;
-     }
-
-     #fale-conosco .conteinerF .info-conosco{
-        flex-direction: column;
-     }
-     #fale-conosco .conteinerF {
-        width: 100%;
-     }
-     #fale-conosco .conteinerF .info-conosco .subtitle{
-        flex-direction: column;
-        align-items: center;
-     }
-     #fale-conosco .conteinerF .info-conosco .subtitle h1{
-        margin-top: 10px;
-        font-size: 40px;
-        text-align: center;
-        width: 70%;
-     }
-     #fale-conosco .conteinerF .info-conosco .subtitle h2{
-        margin-top: 5px;
-        font-size: 12px;
-        text-align: center;
-        font-family: 'Playfair Display', serif;
-        width: 80%;
-     }
-
-     #fale-conosco .conteinerF .info-conosco button{
-        width: 70%;
-        text-align: center;
-        font-size: 15px;
-        height: 50px;
-        margin-bottom: 15px;
-        padding: 0;
-     }
-     #fale-conosco .conteinerF .conteinerRoot{
-        flex-direction: column-reverse;
-        align-items: center;
-        width: 100%;
-     }
-
-     .conteinerRoot #statusroot{
-        width: 100%; 
-        align-items: center;
-    
-     }
-     .conteinerRoot #statusroot p{
-        font-family: 'Playfair Display', serif;
-        font-size: 15px;
-        text-align: center;
-        
-     }
-     .conteinerRoot #statusroot div {
-        margin: 10px 0;
-        
-     }
-     .conteinerRoot #root{
-        width: 100%;
-     }
-
-     .conteinerRoot #root input{
-        width: 50%;
-     }
-
-     .conteinerRoot #root textarea{
-        width: 80%;
-     }
-
-     .conteinerRoot #root button{
-        font-family: 'Playfair Display', serif;
-        border-radius: 1px;
-     }
-
-     #rodape .conteinerR .info-rodape{
-        align-items: center;
-        margin: 15px 0;
-     }
-
-     #rodape .conteinerR .info-rodape .info-f{
-        text-align: center;
-     }
-
-     #rodape .conteinerR .info-rodape .info-f form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-     }
-     #rodape .conteinerR .info-rodape .info-f form input{
-       margin:  10px 0;
-     }
-
-     #rodape .conteinerR .info-rodape .info-f form button{
-        font-size: 15px;
-        padding: 0;
-        width: 100%;
-        height: 50px;
-      }
-
-     #rodape .conteinerR{
-        height: 600px;
-        justify-content: space-between;
-     }
-
-     #rodape .conteinerR .info-rodape{
-        height: 50%;
-     }
-     #rodape .conteinerR .copy{
-        height: 30%;
-     }
-
-     #rodape .conteinerR .copy p{
-        font-size: 12px;
-        margin-right: 10px;
-        padding-right:10px ;
-     }
-
+   background-color: transparent;
+   border: 4px solid #ffffff;
+   border-radius: 5px;
+   color: white;
+   padding: 10px 20px;
+   transition: background-color 2s, transform 2s;
+  }
+  #posFeito a:hover{
+   background-color: #03998c;
+   transform: scale(1.1);
   }
 
 

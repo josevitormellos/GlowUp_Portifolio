@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="ondas.css">
     <link rel="stylesheet" href="perguntas.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="mobile.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>  
     <link rel="shortcut icon" type="imagex/png" href="src/logo.png">
     <title>GlowUP Financeira</title>
@@ -20,7 +21,7 @@
                 <a href="#destaque"><button id="home" class="listMenu">Home</button></a>
                 <a href="#sobremin"><button class="listMenu">Quem Somos</button></a>
                 <a href="#servicos"><button class="listMenu">Serviços</button></a>
-                <a href="#fale-conosco"><button class="listMenu" id="cfo">Conversar com CFO</button></a>
+                <a onclick="CriarFormulario()"><button class="listMenu" id="cfo">Conversar com CFO</button></a>
             </div>
         </div>
         
@@ -119,7 +120,9 @@
     </main>
 
     <main id="sobremin">
-        <h1 class="title">Sobre nos</h1>
+        <svg class="onda" viewBox="0 0 1440 241" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 81C80 65 320 -17.3 480 4C640 25.7 800 102 960 123.7C1120 145 1280 113 1360 97L1440 81V241H1360C1280 241 1120 241 960 241C800 241 640 241 480 241C320 241 160 241 80 241H0V81Z" fill="#Ffffff"/>
+          </svg>
         <div class="division">
             <img src="src/logoGlow.png" width="500px"/>
             <div class="status">
@@ -129,6 +132,7 @@
                     <p class="case">Especialista em Experiência do Cliente e do Funcionário</p>
                     <p class="case">Especialista em Sucesso do Cliente</p>
                 </div>
+                
                 <div class="listdescript">
                     <p class="description">Certificada Customer Experience e Customer Success, Graduada em Recursos Humanos, Especialista em Gestão de Pessoas, Especialista em Educação a Distância, Extensão em Clientologia pelo SDI (EUA), Extensão em Mercado e Desenvolvimento Sustentável pela Columbia University (EUA), Extensão em Neuroeconomia pela Higher School of Economics Moscow (Rússia), Extensão em Empreendedorismo (ONU).</p>
                     <p class="description">Possui mais de 20 anos de experiência em Gestão e Consultoria com foco em Atendimento, Relacionamento e  Engajamento, apoiando diferentes segmentos de mercado como educação, financeiro, tecnologia, comunicação, serviços, comércio e indústria.</p>
@@ -138,7 +142,10 @@
             </div>
             
         </div>
-        <div class="division" >
+        <svg class="onda" viewBox="0 0 1440 241" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 81C80 65 320 -17.3 480 4C640 25.7 800 102 960 123.7C1120 145 1280 113 1360 97L1440 81V241H1360C1280 241 1120 241 960 241C800 241 640 241 480 241C320 241 160 241 80 241H0V81Z" fill="#Ffffff"/>
+          </svg>
+        <div class="division column-Inv">
             <div class="status">
                 <h1 class="nome">Quem é <b>Natalia Mello</b> ?</h1>
                 <div class="titulos">
@@ -170,11 +177,7 @@
                 <button  onclick="CriarFormulario()">Fale Conosco</button>
                  
             </div>
-            <div class="conteinerRoot">
-                <form id="root" onsubmit="event.preventDefault(); EnviarEmail();">
-    
-                </form>
-            </div>
+        
             
         </div>
     </main>
@@ -278,15 +281,15 @@
         <div class="conteinerR">
             <div class="info-rodape">
                 
-                <img src="src/logoR.png" width="400px">
+                <img src="src/logoR.png" width="200px">
                 
                 <div class="info-f">
                     <div>
                         <h1>Contato</h1>
                     </div>
                     <div>
-                        <p><b>Telefone:</b> (21) 99956-1117</p>
-                        <p><b>Email:</b> contato.glowupfinanceiro@gmail.com</p>
+                        <p><img src="src/telefone.png" width="20" height="20"/> (21) 99956-1117</p>
+                        <p><img src="src/mail.png" width="20" height="20"/> contato.glowupfinanceiro@gmail.com</p>
                     </div>
                 </div>
                
@@ -298,10 +301,36 @@
                     </div>
                 </div>
             </div>
+            <div class="copyright">
+                <p class="top">Copyright 2022 – Glow Up Mentoria e Gestão</p>
+           <p>Desenvolvido com ❤️ por @josevitor_ms</p>
+            </div>
            
         </div>
         
     </footer>
+    <div id="formMensagem" >
+        <div class="boxForm">
+            <img src="src/excluir.png" width="25" height="25" onclick="FecharFormulario()">
+            <form id="formObrigatorio" class="formMensagem">
+                <label>Enviar mensagem para contato</label>
+                <input type="text" id="nome" name="nome" required placeholder="Nome">
+            <input type="text" id="email" name="email" required placeholder="Email">
+            <input type="text" id="cell" name="cell" required placeholder="DDD + Whatsapp">
+
+            <button onclick="EnviarEmail()">Enviar</button>
+            <label class="descript">Envie o formulario e receba 30 minutos de monitoria online</label>
+            
+        </form>
+            
+            <div id="posFeito">
+                <h2>Link para 30 minutos de monitoria</h2>
+                <a href="https://api.whatsapp.com/send/?phone=5521999561117&text&type=phone_number&app_absent=0">Monitoria</a>
+                <h2>Link para nosso Questionário de Gestão Empresárial</h2>
+                <a href="https://44kkahnuuu0.typeform.com/to/mxE2Wcy1">Gestão</a>
+            </div>
+        </div>
+    </div>
     <script src="formulario.js"></script>
     <script src="perguntas.js"></script>
     
