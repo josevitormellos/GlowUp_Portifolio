@@ -22,7 +22,7 @@ function CriarFormulario() {
             <input type="text" id="empresa" name="empresa" required placeholder="Empresa">
             <input type="text" id="cell" name="cell" required placeholder="Telefone com DDD">
             <textarea cols="30" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
-            <button type="submit">Enviar</button>`;
+            <button class="btn-1" type="submit"><spam>Enviar</spam></button>`;
     }
     else {
         /*status.innerHTML = ``;*/
@@ -49,4 +49,8 @@ function EnviarEmail() {
 
 
 	window.location.href = linkEmail;
+}
+
+function Sobremin(){
+    var nome = document.getElementById('nome');
 }

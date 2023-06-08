@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
@@ -36,15 +36,16 @@ body{
 #menu h1{
     color: #00985d;
     font-size: 50px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Bebas Neue', sans-serif;
     
 }
 
 #menu #list{
-    width: 25%;
+    width: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family:'Bebas Neue', sans-serif;
 }
 
 #menu #home{
@@ -57,6 +58,8 @@ body{
     color: rgba(93,100,58,255);
     background:none;
     transition: color 0.2s;
+    font-family:'Bebas Neue', sans-serif;
+    font-size: 20px;
 }
 
 #menu #cfo{
@@ -69,6 +72,7 @@ body{
     height: 40px;
     font-size: 15px;
     font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #menu .listMenu:hover{
@@ -82,96 +86,52 @@ body{
     
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-#destaque .conteiner{
-    margin-top: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-#destaque .conteiner .title {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    background-image: linear-gradient(to right, #00697C, #007C71);
-    justify-content: space-evenly;
-}
-
-#destaque .conteiner .title h1{
-    font-size: 65px;
-    font-weight: 900;
-    color: white;
-    
-}
-#destaque .conteiner .title h2{
-   font-size: 40px;
-   font-weight: 900;
-   color: white;
-}
-#destaque .conteiner .title h3{
-    font-size: 50px;
-    font-weight: 100;
-    color: whitesmoke;
-    font-family: 'Playfair Display', serif;
-}
-
-
-
-#destaque .conteiner .title .space{
-    min-height: 300px;
-    max-height: 300px;
-    width: 80%;
-    margin-left: 60px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
-}
-
-#destaque .conteiner .image{
-    width: 50%;
-    height: 550px;
-
-}
-
-#destaque .conteiner .image img{
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    object-fit: fill;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Bebas Neue';
     
 
 }
+#destaque h1{
+   margin-top: -140px;
+   font-size: 80px;
+   color: #037B70;}
+#destaque h2{
+   margin-top: 5px;
+   font-size: 30px;
+   color: #037B70;
+}
+#destaque a{
+   font-size: 20px;
+   margin-top: 20px;
+   color: #2c2c2c
+}
+
 
 
 /*Serviços*/
 #servicos{
-    margin: 30px 0;
+    
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-top: 60px;
+   
 }
 
 #servicos .titleS{
-    width: 30%;
     text-align: center;
-    margin-bottom: 30px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 #servicos .titleS h1{
     font-size: 40px;
     font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 30px;
     
 }
 #servicos .titleS p{
@@ -183,116 +143,72 @@ body{
 }
 
 #servicos .conteiner-service{
+   margin-top: 30px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
+#servicos .conteiner-service .serv{
+   display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 900px;
+    margin-bottom: 50px;
+}
 #servicos .conteiner-service .boxservice{
-    width: 18%;
-    min-height: 500px;
+    width: 300px;
+    height: 400px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
+    text-align:left;
+    font-family: 'Bebas Neue', sans-serif;
+    border: 1px solid rgb(114, 114, 114);
+    box-shadow: 0 0 1px #adadad,
+              0 0 2px #adadad,
+              0 0 5px #adadad,
+              0 0 10px #adadad;
+              border-radius: 5px;
     
-
+   transition: transform 2s;
 }
-#servicos .conteiner-service .boxservice .imgS{
-    width: 100%;
-    height: 50%;
-    
-
-    
-}
-#servicos .conteiner-service .boxservice .cont{
-    width: 60%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align:justify;
-    font-family: 'Playfair Display', serif;
-    
-
-    
+.boxservice:hover{
+   transform: scale(1.1);
 }
 
+#servicos .conteiner-service .boxservice ul{
+   margin-top: 20px;
+   width: 80%;
+   color: rgb(49, 49, 49);
+   list-style: none;
+   text-align: center;
+   
+   
+
+   
+}
+.imgS{
+   transition: transform 1s;
+}
 .buttonS{
     margin-top: 20px;
-    padding: 15px 40px;
-    background-color:#00985d ;
+    padding: 10px 40px;
+    background-color:transparent ;
+    text-decoration: underline #007C71;
     border: 0;
-    font-size: 14px;
-    color: whitesmoke;
-    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #037B70;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 20px;
+    
 }
-.buttonS:hover{
-    background-color:#4eaa87 ;
-}
+.imgS:hover{
 
-/*Informacao*/
-
-#info{
-    width: 100%;
-    background-color: rgb(249, 249, 249);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#info .conteinerI{
-    background-image: linear-gradient(to right, #36563e, #48965c  );
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 360px;
-    
-}
-
-#info .conteinerI h1{
-    font-size: 30px;
-    color: whitesmoke;
-    width: 90%;
-    font-weight: 200;
-    padding-top: 3%;
-    
-}
-#info .conteinerI .autor{
-    display: flex;
-    justify-content: flex-start;
-    width: 80%;
-    align-items: center;
-    
-}
-#info .conteinerI .autor img{
-   border-radius: 50%;
-    
-}
-#info .conteinerI .autor .subtitle{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    justify-content: space-around;
-    margin-left: 3%;
-    height: 50px;
-    color: whitesmoke;
-    
-    
-}
-#info .conteinerI .autor .subtitle h2{
-    font-size: 20px;
-    
-    
-}
-#info .conteinerI .autor .subtitle p{
-    font-size: 15px;
-    
-    
-    
+    transform: scale(1.1);
 }
 
 /*Sobre mim*/
@@ -302,69 +218,99 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 900px;
+    margin: 100px 0;
+    flex-direction: column;
+
+
+}
+.title{
+   font-size: 60px;
+   font-family: 'Bebas Neue', sans-serif;
+   border: 4px solid #000000;
+   padding: 20px 300px;
+   margin-bottom: 110px;
 }
 
 #sobremin .division{
-    width: 50%;
-    height: 100%;
-    background-color: rgb(11, 11, 11);
+    width: 1200px;
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 60px;
+}
+.case{
+   font-family: 'Bebas Neue', sans-serif;
+   color: #2c2c2c;
+   font-size: 16px;
+   text-align: center;
+}
+.titulos{
+   
+   margin-bottom: 20px;
+}
+.nome{
+   text-align: center;
+}
+
+.division img{
+   box-shadow: 0 0 1px #adadad,
+   0 0 2px #adadad,
+   0 0 5px #adadad,
+   0 0 10px #adadad;
 }
 #sobremin .division .status{
-    width: 50%;
-    height: 80%;
-    background-color: rgb(11, 11, 11);
-    display: flex;
-    
-    flex-direction: column;
-    justify-content: space-around;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+   display: flex;
+   flex-direction: column;
     text-align: justify;
-    color: whitesmoke;
+    color: rgb(17, 17, 17);
 }
 #sobremin .division .status h1{
     font-size: 42px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Bebas Neue', sans-serif;
 }
-#sobremin .division button{
-    background-color:#36563e ;
-    padding: 25px 60px;
-    color: whitesmoke;
-    font-size: 18px;
-    border: 0;
-}
-#sobremin .division button:hover{
-    background-color:#00985d ;
 
+
+#sobremin .division button{
+    background-color:transparent ;
+    padding: 20px 60px;
+    color: whitesmoke;
+    font-size: 26px;
+    border: 0;
+    text-decoration: underline #007C71;
+    color: #007C71;
+    font-family: 'Bebas Neue', sans-serif;
+    border: 2px solid #007C71;
+    margin: 20px 0;
 }
+
 
 
 #sobremin .division .status .listdescript{
-    height: 70%;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+
+    font-size: 18px;
+    color: #3a3a3a;
+   
+    font-family: 'Arimo', sans-serif;
 }
 
-#sobremin #cliente{
-    background-image: url(src/header.jpeg);
-}
+
 
  /*Fale Conosco*/
 
  #fale-conosco{
-    background-image: linear-gradient(to right, #36563e, #00985d);
+    
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(15deg, #037B70 50%, #1ea59a 50.1%);
  }
  #fale-conosco .conteinerF {
-    width: 70%;
+    width: 1500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -373,11 +319,12 @@ body{
  }
 
  #fale-conosco .conteinerF .info-conosco{
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 250px;
+    color: whitesmoke;
  }
 
  #fale-conosco .conteinerF .info-conosco button{
@@ -385,12 +332,12 @@ body{
     -moz-border-radius: 10px;
     -webkit-border-radius: 100px;
     border: 0;
-    padding: 22px 90px;
+    padding: 15px 70px;
     color:whitesmoke;
-    background-image: linear-gradient(to right, #36563e, #00985d);
-    box-shadow: 1px 1px rgba(223, 223, 223, 0), 0 0 .4em rgba(59, 59, 59, 0.351);
+    background-color: #037B70;
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 30px;
     cursor: pointer;
  }
  
@@ -398,27 +345,31 @@ body{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    color:white;
+    font-family: 'Bebas Neue', sans-serif;
+    
     height: 90px;
  }
  #fale-conosco .conteinerF .subtitle h1{
     font-size: 50px;
-    color:white;
+    
  }
  #fale-conosco .conteinerF .subtitle h2{
     font-size: 20px;
     font-weight: 100;
-    color:white;
+    
  }
 
  /*Rodape*/
 
  #rodape{
+
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid rgba(180, 180, 180, 0.61);
+    padding-top: 70px;
  }
 
  #rodape .conteinerR{
@@ -432,21 +383,21 @@ body{
     display: flex;
     width: 100%;
     height: 200px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid rgb(74, 74, 74);
+   
+
 
  }
  #rodape .conteinerR .info-rodape h1{
-    font-size: 56px;
-    color: #00985d;
-    font-family: Arial, Helvetica, sans-serif;
+    
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: 600;
 
  }
  #rodape .conteinerR .info-rodape .info-f{
     display: flex;
-    width: 80%;
+    width: 400px;
     height: 120px;
     flex-direction: column;
     justify-content: space-around;
@@ -456,42 +407,37 @@ body{
 
  }
  #rodape .conteinerR .info-rodape .info-f h1{
-   font-size: 22px; 
-   color: black;
+   font-size: 30px;
+   color: #037B70;
    border-bottom: 2px solid black;
    width: 100%;
+   margin-bottom: 20px;
    
    
 
 }
  #rodape .conteinerR .info-rodape .info-f p{
-   font-size: 22px; 
+   font-size: 20px; 
    color: rgb(39, 39, 39);
+   font-family: 'Arimo', sans-serif;
  }
 
 
  #rodape .conteinerR .info-rodape .info-g{
     display: flex;
-    width: 20%;
-    height: 200px;
+   
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     
     
 
  }
- #rodape .conteinerR .info-rodape .info-g h3{
-    
-    color: rgb(38, 38, 38);
 
-    
-
- }
  #rodape .conteinerR .info-rodape .info-g div{
-    height: 50%;
+
     display: flex;
     flex-direction: column;
-    width: 100%;
+  
     justify-content: flex-start;
     color: rgb(79, 79, 79);
     
@@ -500,7 +446,7 @@ body{
 
  }
  #rodape .conteinerR .info-rodape .info-g .links{
-    width: 50%;
+
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -521,45 +467,36 @@ body{
 
  }
  #rodape .conteinerR .copy{
-    height: 50px;
+    
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 100%;
-    color: rgb(79, 79, 79);
+    flex-direction: column;
+   width: 240px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #037B70;
+ }
+    #rodape .conteinerR .copy .links img{
+      margin: 20px 10px;
      
  
      
  
   }
-  #rodape .conteinerR .copy p{
-    width: 50%;
-    color: rgb(79, 79, 79);
-     
  
-     
- 
-  }
   #rodape .conteinerR .copy div{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 50%;
+    border-top: 2px solid #000000;
+    padding-top: 10px;
+    
+    
+   
 
      
  
      
  
   }
-  #rodape .conteinerR .copy div img{
-    margin-left: 20px;
-    width: 20px;
-
-     
- 
-     
- 
-  }
+  
 
 
 
@@ -653,22 +590,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  #root button{
-
-
-    border: 0px;
-    padding: 20px 20%;
-    background-color: transparent;
-    color: rgb(24, 24, 24);
-    font-size: 25px;
-    transition: background-color 0.2s;
-    transition: color 0.2s;
-    margin: 30px 0;
-  }
-  #root button:hover{
-    background-color: #36563e;
-    color: whitesmoke;
-  }
+ 
  
 
 
@@ -927,6 +849,10 @@ body{
 
   }
 
+
+ 
+
+ 
 
 
 
