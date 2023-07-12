@@ -5,7 +5,7 @@
     margin-top: -150px;
     overflow: hidden;
     background-color: transparent;
-    z-index: -1;
+    z-index: 1;
   }
   
   .wave {

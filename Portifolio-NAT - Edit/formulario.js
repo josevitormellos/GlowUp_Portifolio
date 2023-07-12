@@ -1,10 +1,12 @@
-function CriarFormulario() {
+function CriarFormulario(titulo) {
     const form = document.getElementById("formMensagem");
+    const title = document.getElementById("titleFormulario");
     form.style.visibility = "visible";
     const forms = document.getElementById("formObrigatorio");
     const feito = document.getElementById('posFeito');
     forms.style.display="flex";
-    feito.style.display= "none";
+    feito.style.display = "none";
+    title.innerHTML = titulo;
 }
 
 function FecharFormulario(){

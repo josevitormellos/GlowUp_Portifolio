@@ -156,5 +156,49 @@
      
         
        }
+       .introducao {
+        display:none;
+       }
+       #pedra{
+        display: none;
+       }
+       #logoMini{
+        margin:0;
+       }
+       #servicos .conteiner-service  .boxservice .imgS{
+        width: 300px;
+       }
+       .contLateral img{
+       display: none;
+    
+       }
+       .divisionLateral{
+        margin-top: 0;
+       }
+       .contLateral{
+        align-items: center;
+       }
+       .statusLateral{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+       }
+       .statusLateral .subtitle{
+        margin-bottom: 20px;
+       }
+       .statusLateral p{
+        font-family: 'Arimo', sans-serif;
+        font-size: 16px;
+        width: 80%;
+        text-align: center;
+        margin: 0;
+     }
+     .statusLateral h2{
+
+        text-align: center;
+     }
+
+     
 
   }

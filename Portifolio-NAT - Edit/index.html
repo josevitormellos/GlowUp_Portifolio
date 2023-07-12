@@ -16,22 +16,31 @@
 <body>
     <header id="menu">
         <div class="conteiner">
-            <img src="src/logoT.png" width="400px">
-            <div id="list">
+           
+            <div class="list">
                 <a href="#destaque"><button id="home" class="listMenu">Home</button></a>
-                <a href="#sobremin"><button class="listMenu">Quem Somos</button></a>
+                <a href="#ondaGlowup"><button class="listMenu">Quem Somos</button></a>
                 <a href="#servicos"><button class="listMenu">Serviços</button></a>
-                <a onclick="CriarFormulario()"><button class="listMenu" id="cfo">Conversar com CFO</button></a>
+            
+            </div>
+
+            <img src="src/logoT.png" width="400px">
+
+            <div class="list">          
+                <a href="https://wa.me/5521999561117"><button class="listMenu" id="cfo">Conversar com CFO</button></a>
+                <a href="#perguntaFrequentes"><button class="listMenu" class="listMenu">Ajuda</button></a>
+
             </div>
         </div>
         
     </header>
 
     <main id="destaque">
-        <img src="src/logoT.png" width="500px">
-        <h1>ALAVANQUE SUA EMPRESA</h1>
-        <h2>com estratégias de marketing que funcionam</h2>
-        <a href="#">Conheça nossas soluções.</a>
+        
+        <h1>OPORTUNIDADES FINANCEIRAS <p style="color: rgb(209, 192, 170); display: inline-block;">NÃO ACONTECEM</p>, 
+            ELAS SÃO CRIADAS</h1>
+        
+        <a class="buttonInit" href="#">Comece Agora</a>
         <div class="horizon">
             <div class="sea">
               <svg class="wave" viewBox="0 0 1440 241" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,66 +62,74 @@
           </main>
 
    <main id="servicos">
+    <div class="introducao">
+        <img src="src/star.png" width="300"/>
+        <h1>método glow up</h1>
+        <h3>Solução completa para o seu negócio</h3>
+        <div class="intrConteudo">
+            <div class="colum">
+                <div class="statusColum ">
+                    <h2>CFO</h2>
+                    <p class="subtitle">ESTRATÉGIA</p>
+                    <p>Definir estratégias financeiras, controlar e fomentar o crescimento </p>
+                </div>
+                <div class="statusColum ">
+                    <h2>jurídico</h2>
+                    <p class="subtitle">GESTÃO DE RISCO</p>
+                    <p>Apoio técnico operacional jurídico e gestão de riscos</p>
+                </div>
+            </div>
+            <img src="src/ciclo.png" class="ciclo"/>
+            <div class="colum">
+                <div class="inverse">
+                    <h2>bpo</h2>
+                    <p class="subtitle">FINANCEIRO E ADMINISTRATIVO</p>
+                    <p>Solução administrativa e financeira, terceirização de todos o processo operacional</p>
+                </div>
+                <div class="inverse">
+                    <h2>Contabilidade</h2>
+                    <p class="subtitle">CONSULTIVA</p>
+                    <p>Muito além de escrituração e demonstrações, auxilia na tomada de decisões e mitiga riscos</p>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    
+
     <div class="titleS">
-        <h1>"OS HÁBITOS SÃO COMO CORDAS. SE ACRESCENTARMOS UM FIO POR DIA, EM POUCO TEMPO NÃO PODEM MAIS SER ROMPIDOS."</h1>
-        <p>Somos especializados para oferecer as melhores soluções em:</p>
+        <h1>Somos especializados para oferecer as melhores soluções em:</h1>
     </div>
        
         <div class="conteiner-service">
             <div class="serv">
-            <div class="boxservice">
-                
-                
-                    <button class="buttonS">Gestão Estratégica</button>
-                    <img class="imgS" src="src/1.png" width="100"/>
-                    <ul>
-                        <li>Estruturação Estratégica</li>
-                        <li>Modernização Administrativa </li>
-                        <li>Otimização de Processos.</li>
-                    </ul>
+            <div class="boxservice">    
+                    <img class="imgS" src="src/1.png" width="400"/>
+                    <a class="buttonInit" href="#gestao">Gestão Estratégica</a>
                 
             </div>
-            <div class="boxservice">
-                
-                
-                    <button class="buttonS">Gestão Financeira</button>
-                    <img class="imgS" src="src/2.png" width="100"/>
-                    <ul>
-                        <li>Avaliação dos processos e controles financeiros</li>
-                        <li>Precificação</li>
-                        <li>Estratégia de Custos</li>
-                        <li>Inteligência Financeira</li>
-                    </ul>
+            <div class="boxservice">    
+                <img class="imgS" src="src/2.png" width="400"/>
+                <a class="buttonInit" href="#gestao">Gestão Financeira</a>
             
-                
+            </div>
+            <div class="boxservice">    
+                <img class="imgS" src="src/3.png" width="400"/>
+                <a class="buttonInit" href="#cfofinan">CFO por Assinatura</a>
+            
             </div>
         </div>
             
-        <div class="serv">
-            <div class="boxservice">
-                
-                
-                    <button class="buttonS">Diretor Financeiro </br>por Assinatura</button>
-                    <img class="imgS" src="src/3.png" width="100"/>
-                    <ul>
-                        <li>Coach - Avaliação do Perfil</li>
-                        <li>Identificação dos problema que impedem o desenvolvimento </li>
-                        <li>Identificação de caminhos par lidar com os problemas da empresa.</li>
-                    </ul>
-                
+        <div class="serv" id="serv2">
+            <div class="boxservice">    
+                <img class="imgS" src="src/4.png" width="400"/>
+                <a class="buttonInit" href="#consultoria">Consultoria</a>
+            
             </div>
-            <div class="boxservice">
-               
-
-                    <button class="buttonS">Mentoria</button>
-                    <img class="imgS" src="src/4.png" width="100"/>
-                    <ul>
-                        <li>Diagnóstico econômico e financeiro  Planejamento Financeiro e Tributário</li>
-                        <li>Orçamento anual base zero</li>
-                        <li>Apuração do resultado mensal com indicadores (RxO)</li>
-                        <li>Apoio para captação de recursos financeiros Viabilidade Econômico-Financeiro de projetos</li>
-                    </ul>
-                
+            <div class="boxservice">    
+                <img class="imgS" src="src/5.png" width="400"/>
+                <a class="buttonInit" href="#consultoria">Mentoria</a>
+            
             </div>
         </div>
             
@@ -120,27 +137,103 @@
     </main>
 
     <main id="sobremin">
-        <svg class="onda" viewBox="0 0 1440 241" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg id="cfofinan" class="onda" viewBox="0 0 1440 241" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 81C80 65 320 -17.3 480 4C640 25.7 800 102 960 123.7C1120 145 1280 113 1360 97L1440 81V241H1360C1280 241 1120 241 960 241C800 241 640 241 480 241C320 241 160 241 80 241H0V81Z" fill="#Ffffff"/>
           </svg>
         <div class="division">
-            <img src="src/logoGlow.png" width="500px"/>
+            
+            <img src="src/collection1.png" width="600px"/>
             <div class="status">
-                <h1 class="nome">Quem é <b>Glow UP</b> ?</h1>
-                <div class="titulos">
-                    <p class="case">Fundadora da UNI-CX | Universidade da Experiência do Cliente</p>
-                    <p class="case">Especialista em Experiência do Cliente e do Funcionário</p>
-                    <p class="case">Especialista em Sucesso do Cliente</p>
-                </div>
+                <h1 class="nome">CFO por assinatura</h1>
+                
                 
                 <div class="listdescript">
-                    <p class="description">Certificada Customer Experience e Customer Success, Graduada em Recursos Humanos, Especialista em Gestão de Pessoas, Especialista em Educação a Distância, Extensão em Clientologia pelo SDI (EUA), Extensão em Mercado e Desenvolvimento Sustentável pela Columbia University (EUA), Extensão em Neuroeconomia pela Higher School of Economics Moscow (Rússia), Extensão em Empreendedorismo (ONU).</p>
-                    <p class="description">Possui mais de 20 anos de experiência em Gestão e Consultoria com foco em Atendimento, Relacionamento e  Engajamento, apoiando diferentes segmentos de mercado como educação, financeiro, tecnologia, comunicação, serviços, comércio e indústria.</p>
-                    <p class="description">Liderou projetos de educação presencial e a distância, coordenou ações de gestão e desenvolvimento de pessoas, atuou na gestão de mudanças e atualmente dedica-se à consultoria e desenvolvimento com foco Experiência do Cliente.</p>
+                   <p>Visando agregar valor as pequenas e médias empresas, apresentamos o CFO por assinatura, um serviço especializado para direcionar os desafios financeiros que as empresas enfrentam no dia a dia. </p>
                 </div>
-                <button>Saiba mais</button>
+                <button>Contrate</button>
             </div>
             
+        </div>
+        <svg id="gestao" class="onda" viewBox="0 0 1440 241" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 81C80 65 320 -17.3 480 4C640 25.7 800 102 960 123.7C1120 145 1280 113 1360 97L1440 81V241H1360C1280 241 1120 241 960 241C800 241 640 241 480 241C320 241 160 241 80 241H0V81Z" fill="#Ffffff"/>
+          </svg>
+        <div class="divisionLateral column-Inv">
+            
+            <div class="contLateral">
+                <img src="src/collection2.png"/>
+                <div class="statusLateral">
+                    <h2>Gestão Estratégica</h2>
+                    <p class="subtitle">Pacote extra - CFO por assinatura</p>
+                    <p>Acompanhamento das Estratégias e Indicadores definidos. <br/>
+                        Estruturação Estratégica <br/>
+                        Modernização Administrativa<br/>
+                        Otimização de Processos</p>
+                    <button onclick="CriarFormulario('Gestão Estratégica')">Contrate</button>
+                </div>
+            </div>
+
+            <div class="contLateral">
+                
+                <div class="statusLateral">
+                    <h2>Gestão Financeira</h2>
+                    <p class="subtitle">Pacote extra - CFO por assinatura</p>
+                    <p>Gestão Operacional do Financeiro de sua empresa<br/>
+                        Responsável pelo contas  a pagar e receber<br/>
+                        Acompanhamento e revisão de contas e parcerias.<br/>
+                        Modernização do Processo e estrutura financeira
+                        </p>
+                    <button onclick="CriarFormulario('Gestão Financeira')">Contrate</button>
+                </div>
+                <img src="src/collection3.png"/>
+            </div>
+        </div>
+        <svg id="consultoria" class="onda" viewBox="0 0 1440 241" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 81C80 65 320 -17.3 480 4C640 25.7 800 102 960 123.7C1120 145 1280 113 1360 97L1440 81V241H1360C1280 241 1120 241 960 241C800 241 640 241 480 241C320 241 160 241 80 241H0V81Z" fill="#Ffffff"/>
+          </svg>
+        <div class="divisionLateral column-Inv">
+            
+            <div class="contLateral">
+                <img src="src/collection4.png"/>
+                <div class="statusLateral">
+                    <h2>Consultoria</h2>
+                    <p class="subtitle">Gestão Empresarial - Pequenas e Micro Empresas</p>
+                    <p>Projetos Personalizados de acordo com os desafios e necessidades enfrentados pela empresa e/ou negócio. Visão Otimização e Controle da Operação como um todo e seus impactos no retorno financeiro e/ou do investimento.</p>
+                    <button onclick="CriarFormulario('Consultoria')">Contrate</button>
+                </div>
+            </div>
+
+            <div class="contLateral">
+                
+                <div class="statusLateral">
+                    <h2>Mentoria</h2>
+                    <p class="subtitle">Foco Finanças</p>
+                    <p>Construção de um olhar direcionado a objetivos.
+                        Direcionamento Financeiro para tomadas de decisões e desafios enfrentados no dia a dia da empresa e/ou vida pessoal. 
+                        </p>
+                    <button onclick="CriarFormulario('Mentoria')">Contrate</button>
+                </div>
+                <img src="src/collection5.png"/>
+            </div>
+        </div>
+        <svg  id="ondaGlowup" class="onda" viewBox="0 0 1440 241" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 81C80 65 320 -17.3 480 4C640 25.7 800 102 960 123.7C1120 145 1280 113 1360 97L1440 81V241H1360C1280 241 1120 241 960 241C800 241 640 241 480 241C320 241 160 241 80 241H0V81Z" fill="#Ffffff"/>
+          </svg>
+        <div class="divisionEx">
+            <h1 class="nome">GLOW UP e VOCÊ juntos para ALAVANCAR seu NEGÓCIO🚀</h1>
+            <div class="division">
+                <img id="pedra" src="src/Pedra.png" width="500px"/>
+                <div class="status" id="glowup">
+                    
+        
+                    <img id="logoMini" src="src/logoGlow.png" width="100px"/>
+                    <div class="listdescript">
+                        <p class="description">Nascemos em 2022 com a missão de mudar o cenário econômico dos empreendedores e pequenas empresas do país. Com todo nosso encanto e experiência, envolvemos nossos parceiros num ambiente de muita organização, inteligência e planejamento com o foco de construir um futuro sólido e parcerias relevantes. Disponibilizando toda nossa expertise 24/7 para que todos possam ir muito além dos números e lidar profissionalmente com as finanças do seu empreendimento e assim atingir patamares nunca imaginados antes.</p>
+                        <p class="description">Dividimos o sonho dos nossos clientes, como parceiros estratégicos para a jornada de crescimento do negócio empreendido. Nossos serviços vão além do financeiro com o Diretor por assinatura buscamos entregar uma visão estratégica e diferenciada com um olhar de sócio, envolvendo toda nossa experiencia e expertise do mercado.</p>
+                    </div>
+                </div>
+                
+            </div>
+           
         </div>
         <svg class="onda" viewBox="0 0 1440 241" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 81C80 65 320 -17.3 480 4C640 25.7 800 102 960 123.7C1120 145 1280 113 1360 97L1440 81V241H1360C1280 241 1120 241 960 241C800 241 640 241 480 241C320 241 160 241 80 241H0V81Z" fill="#Ffffff"/>
@@ -149,21 +242,21 @@
             <div class="status">
                 <h1 class="nome">Quem é <b>Natalia Mello</b> ?</h1>
                 <div class="titulos">
-                    <p class="case">Fundadora da UNI-CX | Universidade da Experiência do Cliente</p>
-                    <p class="case">Especialista em Experiência do Cliente e do Funcionário</p>
-                    <p class="case">Especialista em Sucesso do Cliente</p>
+                    <p class="case">Formada em Engenheira de Produção pela UERJ, especialista em planejamento financeiro (UERJ) e tributário (PUC-RJ), mais de 8 anos de experiência em controladoria e contabilidade gerencial, atuando no Mercado Financeiro e em projetos de Venture Capital e Private Equity.</p>
+                    
                 </div>
-                <div class="listdescript">
-                    <p class="description">Certificada Customer Experience e Customer Success, Graduada em Recursos Humanos, Especialista em Gestão de Pessoas, Especialista em Educação a Distância, Extensão em Clientologia pelo SDI (EUA), Extensão em Mercado e Desenvolvimento Sustentável pela Columbia University (EUA), Extensão em Neuroeconomia pela Higher School of Economics Moscow (Rússia), Extensão em Empreendedorismo (ONU).</p>
-                    <p class="description">Possui mais de 20 anos de experiência em Gestão e Consultoria com foco em Atendimento, Relacionamento e  Engajamento, apoiando diferentes segmentos de mercado como educação, financeiro, tecnologia, comunicação, serviços, comércio e indústria.</p>
-                    <p class="description">Liderou projetos de educação presencial e a distância, coordenou ações de gestão e desenvolvimento de pessoas, atuou na gestão de mudanças e atualmente dedica-se à consultoria e desenvolvimento com foco Experiência do Cliente.</p>
+                <div class="listdescript">    
+                    <p class="description">Profundo conhecimento em Finanças Corporativas, Contabilidade, Impostos, FP&A, M&A, Controles Internos, Compliance, Serviços Compartilhados, TI e Jurídico. </p>
+                    <p class="description">Experiência profissional e executiva desenvolvida em diversos setores da economia e diversas culturas (corporações brasileiras, empresas familiares e startups), com histórico comprovado para entrega de resultados consistentes em diversos ambientes e culturas.
+                        Perfil analítico e estratégico.</p>
                 </div>
-                <button>Saiba mais</button>
+                <a href="https://wa.me/5521999561117?text=Ol%C3%A1+Nat%C3%A1lia+vim+para+falar+do+m%C3%A9todo+Glow+Up%2C+teria+um+tempo%3F"><button>Conversar Comigo</button></a>
             </div>
             <img src="src/natalia.png" width="500px"/>
             
         </div>
         </div>
+        
     </main>
 
     <main id="fale-conosco">
@@ -174,7 +267,7 @@
                     <h1>Solicite uma proposta </h1>
                     <h2>Será um prazer te ajudar com as nossas soluções corporativas.</h2>
                 </div>
-                <button  onclick="CriarFormulario()">Fale Conosco</button>
+                <button  onclick="CriarFormulario('Formulario de Registro')">Fale Conosco</button>
                  
             </div>
         
@@ -196,11 +289,7 @@
                     </header>
                     <div class="item__content">
                         <p class="item__answer">
-                            HTML abreviação para a expressão inglesa
-                            HyperText Markup Language, que significa:
-                            "Linguagem de Marcação de Hipertexto" é
-                            uma linguagem de marcação utilizada na
-                            construção de páginas na Web.
+                            O Método Glow Up é especializado em microempreendedores e pequenas empresas, oferecendo uma solução completa, administrativa, financeira, jurídica e contábil, onde sua empresa terá um acompanhamento estratégico diferenciado, unindo toda a experiência de mercado do nosso time. 
                         </p>
                     </div>
                 </div>
@@ -209,19 +298,12 @@
                 <div class="accordion__item">
                     <header class="item__header">
                         <i class='bx bx-chevron-down item__icon'></i>
-                        <h4 class="item__question">Pra quem é o metodo Glow Up?</h4>
+                        <h4 class="item__question">Como funciona o CFO por assinatura?</h4>
                     </header>
                     <div class="item__content">
-                        <p class="item__answer">Cascading Style Sheets é um
-                            mecanismo para adicionar estilo a um documento
-                            web.
+                        <p class="item__answer">O CFO por assinatura foi criado para assistir as empresas nas tomadas de decisão financeiras estratégicas, direcionando o melhor cenário para o desafio que sua empresa se encontra, como a dor do crescimento, gerenciamento de dívidas, gestão de impostos, acompanhamento de indicadores, seja qual for o seu desafio o CFO por assinatura tem uma solução exclusiva para o seu negócio!
                         </p>
-                        <p class="item__answer"> O código CSS pode ser aplicado
-                            diretamente nas tags ou ficar contido dentro das
-                            tags &lt;style &gt;. Também é possível, em vez de colocar
-                            a formatação dentro do documento, criar um link para
-                            um arquivo CSS que contém os estilos.
-                        </p>
+                        
                     </div>
                 </div>
     
@@ -229,17 +311,24 @@
                 <div class="accordion__item">
                     <header class="item__header">
                         <i class='bx bx-chevron-down item__icon'></i>
-                        <h4 class="item__question">Como Contatar a equipe Glow Up?</h4>
+                        <h4 class="item__question">Porque irei focar no que é mais importante pra mim?</h4>
                     </header>
                     <div class="item__content">
                         <p class="item__answer">
-                            JavaScript é uma linguagem de programação 
-                            interpretada estruturada, de script em alto 
-                            nível com tipagem dinâmica fraca e multiparadigma.
+                            Deixa com a gente a parte burocrática e operacional, vamos direcionar sua equipe, com todas as informações necessárias para tomada de decisão assertiva e eficiente, contribuindo assim para seu foco na operação, e concentrando sua energia no que você realmente ama, seu propósito! 
                         </p>
+                        
+                    </div>
+                </div>
+    
+                <div class="accordion__item">
+                    <header class="item__header">
+                        <i class='bx bx-chevron-down item__icon'></i>
+                        <h4 class="item__question">Meu negócio de fato será acompanhado e atualizado de forma unificada?</h4>
+                    </header>
+                    <div class="item__content">
                         <p class="item__answer">
-                           Juntamente com HTML e CSS, o JavaScript é uma das 
-                           três principais tecnologias da World Wide Web.
+                            Totalmente! Nós trabalhamos junto aos sócios para garantirmos a melhor performance dos indicadores operacionais e financeiros, contribuindo diretamente à evolução do negócio.
                         </p>
                     </div>
                 </div>
@@ -247,30 +336,33 @@
                 <div class="accordion__item">
                     <header class="item__header">
                         <i class='bx bx-chevron-down item__icon'></i>
-                        <h4 class="item__question">Serviços Glow Up, servem para empresas de pequeno porte como MAI?</h4>
+                        <h4 class="item__question">Qual a experiência do time?</h4>
                     </header>
                     <div class="item__content">
                         <p class="item__answer">
-                            PHP é uma linguagem interpretada livre, usada originalmente 
-                            apenas para o desenvolvimento de aplicações presentes e 
-                            atuantes no lado do servidor, capazes de gerar conteúdo 
-                            dinâmico na World Wide Web. 
+                            Todos os nossos parceiros e colaboradores responsáveis pela parte estratégica e operacional tem anos de experiência no seu ramo de atuação, além disso estamos mais que abertos para marcarmos uma sessão e nos conhecermos melhor. Afinal de contas somos um TIME!
                         </p>
                     </div>
                 </div>
-    
                 <div class="accordion__item">
                     <header class="item__header">
                         <i class='bx bx-chevron-down item__icon'></i>
-                        <h4 class="item__question">O que é necessário para começar o método Glow Up?</h4>
+                        <h4 class="item__question">Existe algum risco envolvido na contratação do projeto?</h4>
                     </header>
                     <div class="item__content">
                         <p class="item__answer">
-                            Python é uma linguagem de programação de alto nível, 
-                            interpretada de script, imperativa, orientada a 
-                            objetos, funcional, de tipagem dinâmica e forte.
-                             Foi lançada por Guido van Rossum em 1991.
+                            Não podemos afirmar que não haverão riscos, pois faz parte do nosso dia a dia como empreendedores. Entretanto, garantimos que iremos trabalhar para mitigar e oferecer o melhor serviço, trazendo soluções que façam seu negócio crescer e atingir outro patamar, estamos sempre preocupados em garantir uma análise financeira saudável em prol do retorno do investimento.
                         </p>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <header class="item__header">
+                        <i class='bx bx-chevron-down item__icon'></i>
+                        <h4 class="item__question">Como contratar a equipe Glow Up?</h4>
+                    </header>
+                    <div class="item__content">
+                        <p class="item__answer">
+                            Basta entrar em contato conosco, clicando em qualquer botão da nossa página, que irá te direcionar para uma breve pesquisa de direcionamento, ou também fique a vontade para nos contatar pelas nossas redes socias e contatos, que garantimos uma conversa com um especialista e que irá te entregar um projeto exclusivo! </p>
                     </div>
                 </div>
     
@@ -280,31 +372,37 @@
     <footer id="rodape">
         <div class="conteinerR">
             <div class="info-rodape">
-                
-                <img src="src/logoR.png" width="200px">
-                
-                <div class="info-f">
-                    <div>
-                        <h1>Contato</h1>
+                <div class="logoRodape">
+                    <div class="rodapePrin">
+                        <img src="src/logoRodape.png" width="300px">
+                        <h2>GLOW UP E VOCÊ JUNTOS PARA ALAVANCAR SEU NEGÓCIO🚀</h2>
+                    <p>Nosso combustível é o seu sucesso!</p>
                     </div>
-                    <div>
-                        <p><img src="src/telefone.png" width="20" height="20"/> (21) 99956-1117</p>
-                        <p><img src="src/mail.png" width="20" height="20"/> contato.glowupfinanceiro@gmail.com</p>
+                    <div class="infoCredit">
+                        <p>©2022 Glow Up Financeiro.</p>
+                            <p>All Rights Reserved.</p>
+                            <p>CNPJ: 44.762.892/0001-33</p>
                     </div>
+                    <a href="#">Termo de Uso | Politica de Privacidade</a>
+                    
                 </div>
-               
-                <div class="copy">
-                    <h1>Redes Sociais</h1>
-                    <div class="links">
-                        <a href="https://www.instagram.com/glowup.financeiro/"><img src="src/inst .png"/></a>
-                            <a href="https://www.linkedin.com/in/nataliademello/"><img src="src/link.png"/></a>
+                <div class="logoRodape">
+                    <h2 class="title">Contato</h2>
+            
+                    <div class="infoContato">
+                        <p>Rio de Janeiro - Brasil</p>
+                            <p>contato@reallygreatsite.com</p>
+                            <p>+55 21 99956-1117</p>
                     </div>
+                    <p href="#">Desenvolvido  por Jose Vitor de Mello</p>
+                    
                 </div>
+                
+                
+                
+         
             </div>
-            <div class="copyright">
-                <p class="top">Copyright 2022 – Glow Up Mentoria e Gestão</p>
-           <p>Desenvolvido com ❤️ por @josevitor_ms</p>
-            </div>
+
            
         </div>
         
@@ -313,6 +411,7 @@
         <div class="boxForm">
             <img src="src/excluir.png" width="25" height="25" onclick="FecharFormulario()">
             <form id="formObrigatorio" class="formMensagem">
+                <label id="titleFormulario"></label>
                 <label>Enviar mensagem para contato</label>
                 <input type="text" id="nome" name="nome" required placeholder="Nome">
             <input type="text" id="email" name="email" required placeholder="Email">
