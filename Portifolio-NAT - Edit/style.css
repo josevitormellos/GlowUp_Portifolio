@@ -18,7 +18,7 @@ body{
     align-items: center;
     width: 100%;
     justify-content: center;
-    box-shadow: 1px 1px rgba(223, 223, 223, 0.663), 0 .2em .4em rgb(59, 59, 59);
+    box-shadow: 1px 1px rgba(255, 255, 255, 0.362), 0 .1em .2em rgba(190, 190, 190, 0.698);
 
     overflow: hidden;
     position: fixed;
@@ -26,18 +26,30 @@ body{
     z-index: 5;
     background-color: rgb(255, 255, 255);
 }
+.tuInit{
+   margin-left:-40px;
+}
+.tuList{
+   margin-right: -45px;
+   margin-left: 45px;
+}
+
+.conteiner img{
+  
+   margin-left: 40px;
+}
 
 #menu .conteiner{
     display: flex;
     align-items: center;
     width: 90%;
     justify-content: space-evenly;
-    height: 100px;
+    height: 140px;
 }
 #menu h1{
     color: #00985d;
     font-size: 50px;
-    font-family:'Bebas Neue', sans-serif;
+    font-family:'Baskervville', serif;
     
 }
 
@@ -46,7 +58,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family:'Bebas Neue', sans-serif;
+    font-family:'Baskervville', serif;
 }
 
 #menu #home{
@@ -59,8 +71,8 @@ body{
     color: rgba(93,100,58,255);
     background:none;
     transition: color 0.2s;
-    font-family:'Bebas Neue', sans-serif;
-    font-size: 20px;
+    font-family:'Baskervville', serif;
+    font-size: 24px;
 }
 
 #menu #cfo{
@@ -69,11 +81,11 @@ body{
     -webkit-border-radius: 100px;
     background-image: linear-gradient(to right, #007C71, #037B70);
     color: white;
-    width: 200px;
-    height: 40px;
-    font-size: 15px;
+    width: 270px;
+    height: 50px;
+    font-size: 18px;
     font-weight: 700;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Baskervville', serif;
 }
 
 #menu .listMenu:hover{
@@ -102,33 +114,33 @@ body{
 
 }
 #destaque h1{
-   margin-top: 200px;
-   font-size: 65px;
+   margin-top: 310px;
+   font-size: 80px;
    color: #f4f4f4;
-   width: 650px;
+   width: 790px;
    text-align: center;
   
 }
 
 
 .buttonInit{
-   margin-top: 20px;
+   margin-top: 40px;
    border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 100px;
-    background-color: #ffffff;
-    color: rgb(44, 44, 44);
-    width: 200px;
-    height: 40px;
-    font-size: 15px;
-    font-weight: 700;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f0efef;
+    color: rgb(81, 59, 26);
+    width: 240px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Arimo' sans-serif;
     text-align: center;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: -40px;
+    margin-bottom: -90px;
 }
 
 
@@ -147,14 +159,17 @@ body{
 
 #servicos .titleS{
     text-align: center;
-    width: 600px;
+    width: 1100px;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    
 }
 #servicos .titleS h1{
     font-size: 40px;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Baskervville', serif;
     margin-bottom: 30px;
+    color: rgb(102, 92, 79);
+    font-weight: 300;
     
 }
 #servicos .titleS p{
@@ -167,7 +182,7 @@ body{
 
 #servicos .conteiner-service{
    margin-top: 30px;
-    width: 100%;
+    width: 1900px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -178,11 +193,11 @@ body{
    display: flex;
     justify-content: space-around;
     flex-direction: row;
-    width: 60%;
+    width: 45%;
     margin-bottom: 10px;
 }
 #servicos .conteiner-service .boxservice{
-    width: 30%;
+    width: 40%;
     height: 400px;
     display: flex;
     align-items: center;
@@ -198,8 +213,9 @@ body{
    transform: scale(1.1);
 }
 #servicos .conteiner-service #serv2{
-   width: 60%;
+   width: 34%;
    justify-content: space-evenly;
+   margin-top: -50px;
 }
 
 #servicos .conteiner-service .boxservice ul{
@@ -216,8 +232,12 @@ body{
 .boxservice img{
    width: 100%;
 }
+#serv2 .boxservice img {
+   width: 300px;
+}
 .imgS{
    transition: transform 1s;
+   width: 350px;
 }
 
 .imgCase{
@@ -236,6 +256,15 @@ body{
     margin-bottom: 20px;
     
 }
+.boxservice .buttonInit{
+   background-color: #045D55;
+   color: white;
+   font-family: 'Baskervville', serif;
+   font-weight: 600;
+   font-size: 24px;
+   height: 40px;
+
+}
 .imgS:hover{
 
     transform: scale(1.1);
@@ -243,7 +272,7 @@ body{
 
 /* =====  Introducao =====*/
 .introducao{
-   width: 90%;
+   width: 1700px;
    height: 950px;
    background-color: #F6FFFC;
    margin: 100px 0;
@@ -280,7 +309,7 @@ body{
    display: flex;
    flex-direction: column;
    align-items:end;
-   width: 300px;
+   width: 350px;
    text-align: right;
 
 }
@@ -288,7 +317,7 @@ body{
    display: flex;
    flex-direction: column;
    align-items:start;
-   width: 200px;
+   width: 350px;
    text-align: left;
 }
 .colum{
@@ -300,37 +329,37 @@ body{
    justify-content: space-between;
 }
 .statusColum h2{
-   font-size: 50px;
+   font-size: 65px;
    font-family: 'Bebas Neue', sans-serif;
    font-weight: 400;
 }
 .statusColum p{
    font-family: 'Arimo', sans-serif;
-   font-size: 18px;
+   font-size: 24px;
    font-weight: 600;
 }
 .statusColum .subtitle{
-   font-size: 25px;
+   font-size: 30px;
    font-weight: 200;
    font-style: italic;
 }
 .inverse h2{
-   font-size: 50px;
+   font-size: 65px;
    font-family: 'Bebas Neue', sans-serif;
    font-weight: 400;
 }
 .inverse p{
    font-family: 'Arimo', sans-serif;
-   font-size: 18px;
+   font-size: 24px;
    font-weight: 600;
 }
 .inverse .subtitle{
-   font-size: 25px;
+   font-size: 30px;
    font-weight: 200;
    font-style: italic;
 }
 .ciclo{
-   width: 36%;
+   width: 39%;
 }
 /*Sobre mim*/
 
@@ -400,16 +429,27 @@ body{
 
 
 #sobremin .division button{
-    background-color:transparent ;
-    padding: 20px 60px;
-    color: whitesmoke;
-    font-size: 26px;
-    border: 0;
-    text-decoration: underline #007C71;
-    color: #007C71;
-    font-family: 'Bebas Neue', sans-serif;
-    border: 2px solid #007C71;
-    margin: 20px 0;
+   margin-top: 20px;
+   border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 100px;
+    background-color: #ffffff;
+    color: rgb(44, 44, 44);
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1 solid rgb(50, 50, 50);
+    
+}
+.linkNat{
+   text-decoration: none;
 }
 
 
@@ -573,7 +613,7 @@ font-family: 'Bebas Neue', sans-serif;
  }
 
  #rodape .conteinerR{
-    width: 100%;
+    width: 1900px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -727,7 +767,7 @@ font-family: 'Bebas Neue', sans-serif;
    
    height: 90%;
    font-family: 'Baskervville', serif;
-   width: 30%;
+   width: 350px;
    color: #000000;
  }
 
@@ -776,6 +816,23 @@ font-family: 'Bebas Neue', sans-serif;
  .infoContato p{
    margin-bottom: 20px;
  }
+
+ /* ===== Parte 3 =====*/
+.iconContato{
+   display: flex;
+   flex-direction: column;
+   width: 125px;
+   font-size: 27px;
+   text-decoration: none;
+   height: 150px;
+   justify-content: space-around;
+   font-family: 'Arimo', serif;
+
+}
+.iconContato a{
+   text-decoration: none;
+}
+
 /*Formulario*/
 
   textarea:focus, input:focus {
